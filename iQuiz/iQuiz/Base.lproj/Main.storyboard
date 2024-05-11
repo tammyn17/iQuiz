@@ -28,32 +28,33 @@
                                 </items>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-nK-YnV" userLabel="TableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-nK-YnV" userLabel="TableView">
                                 <rect key="frame" x="2" y="108" width="389" height="697"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="111" id="AUD-gi-Aql" userLabel="TableCell" customClass="TableViewCell" customModule="iQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="389" height="111"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="100" id="AUD-gi-Aql" userLabel="TableCell" customClass="TableViewCell" customModule="iQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="389" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AUD-gi-Aql" id="bBA-19-UYY" customClass="TableViewCell" customModule="iQuiz" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="389" height="111"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AUD-gi-Aql" translatesAutoresizingMaskIntoConstraints="NO" id="bBA-19-UYY" customClass="TableViewCell" customModule="iQuiz" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="389" height="100"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5q3-dt-irA">
-                                                    <rect key="frame" x="23" y="0.0" width="130" height="130"/>
+                                                    <rect key="frame" x="23" y="0.0" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="130" id="5qj-2T-R56"/>
-                                                        <constraint firstAttribute="height" constant="130" id="lVo-Vj-5HX"/>
+                                                        <constraint firstAttribute="width" constant="100" id="5qj-2T-R56"/>
+                                                        <constraint firstAttribute="height" constant="100" id="lVo-Vj-5HX"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4W-Ap-bCc">
-                                                    <rect key="frame" x="176" y="17" width="190" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4W-Ap-bCc">
+                                                    <rect key="frame" x="170" y="11" width="193" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyG-aC-9b1">
-                                                    <rect key="frame" x="176" y="35" width="189" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OyG-aC-9b1">
+                                                    <rect key="frame" x="170" y="29" width="189" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -61,16 +62,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="5q3-dt-irA" firstAttribute="top" secondItem="bBA-19-UYY" secondAttribute="top" id="1Kd-6G-PV1"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="OyG-aC-9b1" secondAttribute="trailing" constant="4" id="68g-xe-1wy"/>
-                                                <constraint firstItem="OyG-aC-9b1" firstAttribute="top" secondItem="bBA-19-UYY" secondAttribute="topMargin" constant="18" id="D2U-ct-gL0"/>
-                                                <constraint firstItem="OyG-aC-9b1" firstAttribute="top" secondItem="bBA-19-UYY" secondAttribute="top" constant="29" id="EOX-JM-jdm"/>
-                                                <constraint firstItem="E4W-Ap-bCc" firstAttribute="leading" secondItem="5q3-dt-irA" secondAttribute="trailing" constant="23" id="ErO-Vp-1gg"/>
-                                                <constraint firstItem="E4W-Ap-bCc" firstAttribute="top" secondItem="bBA-19-UYY" secondAttribute="topMargin" constant="6" id="HfX-LJ-A6A"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="E4W-Ap-bCc" secondAttribute="trailing" constant="3" id="STH-KL-QRh"/>
                                                 <constraint firstItem="5q3-dt-irA" firstAttribute="leading" secondItem="bBA-19-UYY" secondAttribute="leadingMargin" constant="3" id="f2f-u6-7Tz"/>
-                                                <constraint firstItem="OyG-aC-9b1" firstAttribute="leading" secondItem="5q3-dt-irA" secondAttribute="trailing" constant="23" id="u6Q-tu-Xvy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="bBA-19-UYY" firstAttribute="leading" secondItem="AUD-gi-Aql" secondAttribute="leading" id="DQa-W1-jjn"/>
+                                            <constraint firstAttribute="trailing" secondItem="bBA-19-UYY" secondAttribute="trailing" id="GHF-Jg-kcU"/>
+                                            <constraint firstAttribute="bottom" secondItem="bBA-19-UYY" secondAttribute="bottom" id="cGQ-GH-Lcm"/>
+                                            <constraint firstItem="bBA-19-UYY" firstAttribute="top" secondItem="AUD-gi-Aql" secondAttribute="top" id="zOc-th-Qfs"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="desc" destination="OyG-aC-9b1" id="7YP-Lz-d8p"/>
                                             <outlet property="icon" destination="5q3-dt-irA" id="mEj-fl-Fxb"/>
